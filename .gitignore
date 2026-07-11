@@ -1,0 +1,54 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and editor settings
+.spyproject/
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dataset folders
+data/raw/
+data/train/
+data/validation/
+data/test/
+
+# Trained models and experiment outputs
+experiments/*
+!experiments/.gitkeep
+best_models/*
+!best_models/.gitkeep
+*.keras
+*.h5
+*.hdf5
+
+# Generated logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# TensorFlow and profiling outputs
+logs/
+tensorboard/
