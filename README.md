@@ -155,6 +155,23 @@ best_models/cnn/
 best_models/resnet/
 ```
 
+## Results directory
+
+The `results/` directory contains selected final figures copied manually from the experiment folders for presentation on GitHub.
+
+It provides a concise visual summary of the best model performances without publishing the complete experiment history, large prediction files, or trained model files.
+
+Typical contents include:
+
+- CNN training and validation accuracy curves;
+- CNN training and validation loss curves;
+- CNN confusion matrix;
+- ResNet50 training and validation accuracy curves;
+- ResNet50 training and validation loss curves;
+- ResNet50 confusion matrix.
+
+Only lightweight and representative final results should be added to this directory. Large files such as `.keras` models, complete prediction CSV files, and intermediate experiment outputs remain excluded from Git.
+
 ## Dataset
 
 The dataset is downloaded through `kagglehub` from the Kaggle Garbage Classification dataset.
