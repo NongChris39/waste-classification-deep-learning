@@ -220,6 +220,8 @@ The image files are intentionally excluded from Git because datasets can be larg
 
 The project uses a fixed random seed for data splitting and dataset shuffling. Exact results can still vary slightly depending on the TensorFlow version, hardware, operating system, and GPU configuration.
 
+See the [reproducibility and verification guide](docs/reproducibility.md) for a step-by-step explanation of the workflow, recorded dataset split, local checks, model-selection protocol, and the limits of publicly available artifacts.
+
 ## Author
 
 Yves Christian Nonguierma
