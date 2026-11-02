@@ -4,6 +4,7 @@
 Splits the dataset into training, validation, and test sets.
 """
 
+import math
 import os
 import shutil
 import stat
@@ -76,6 +77,11 @@ def normaliser_pourcentages():
     
     # Validate the split percentages defined in config.py.
     
+    if any(not math.isfinite(value) for value in percentages):
+        raise ValueError(
+            "Dataset split percentages must be finite numbers."
+        )
+
     if any(value < 0 for value in percentages):
         raise ValueError(
             "Les pourcentages de decoupage "
